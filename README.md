@@ -51,6 +51,7 @@ Implements ideas from the following papers:
 - `diffColor` — The color of differing pixels in the diff output in `[R, G, B]` format. `[255, 0, 0]` by default.
 - `diffColorAlt` — An alternative color to use for dark on light differences to differentiate between "added" and "removed" parts. If not provided, all differing pixels use the color specified by `diffColor`. `null` by default.
 - `diffMask` — Draw the diff over a transparent background (a mask), rather than over the original image. Will not draw anti-aliased pixels (if detected).
+- `ignoreColor` — Indicates if pixels of a certain color must be ignored when comparing the images. Set this member to an object literal such as `{ r: 255, g: 255, b:255 }`
 
 Compares two images, writes the output diff and returns the number of mismatched pixels.
 
